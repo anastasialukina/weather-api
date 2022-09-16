@@ -36,7 +36,7 @@ class StoreWeather extends Command
 
             DB::table('weather')->insert([
                 'time'              => date('Y-m-d H:i:s', $current['datetime']['timestamp']),
-                'name'              => $current['location']['name'],
+                'name'              => $city,
                 'weather_latitude'  => $current['location']['latitude'],
                 'weather_longitude' => $current['location']['longitude'],
                 'temperature'       => $current['forecast']['temp'],
