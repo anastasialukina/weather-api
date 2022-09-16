@@ -5,6 +5,7 @@
 `php artisan schedule:work` for start to store the weather every 2 minutes
 
 After that, use endpoints:
+
 `http://localhost/api/weather` to get all weather data from database
 
 `http://localhost/api/weather/yerevan` to see all weather data by city filter
@@ -12,6 +13,7 @@ After that, use endpoints:
 `http://localhost/api/cities` to get all cities from database
 
 `http://localhost/api/add` to add new city to the database using body for example:
+
 `city_name:Boston
 latitude:42.36
 longitude:-71.06`
